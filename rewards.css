@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* display: flex; */
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+    background-color:hsl(252, 15%, 65%) ;
+   
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+.header a{
+    background-color: white;
+    padding: 0;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(252, 75%, 60%);
+    padding: 8rem;
+    border-radius: 2rem;
+}
+
+.points{
+    display: flex;
+    margin-bottom: 3rem;
+    
+}
+.points2{
+    display: flex;
+    /* margin-bottom: 8rem; */
+    
+}
+.points nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.points2 nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.redeem1{
+    width: 15rem;
+    padding: 3rem;
+    background-color: white;
+    margin-right: 2rem;
+    border-radius: 2rem;
+}
+.redeem1 a{
+    margin-top: 1.5rem;
+    text-decoration: none;
+    background-color: hsl(252, 75%, 60%);
+    padding: 1rem;
+    color: white;
+    border-radius: 2rem;
+}
+.redeem{
+    width: 15rem;
+    padding: 3rem;
+    background-color: white;
+    margin-right: 2rem;
+    border-radius: 2rem;
+}
+.kit{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.redeem a{
+    margin-top: 1.5rem;
+    text-decoration: none;
+    background-color: hsl(252, 15%, 65%);
+    padding: 1rem;
+    color: white;
+    border-radius: 2rem;
+}
