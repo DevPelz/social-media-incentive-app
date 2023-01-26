@@ -17,10 +17,10 @@ class AIRTIME:
 
     def send(self):
         
-        phone_number = 'MyPhoneNumber'
+        phone_number = '+2348138054685'
 
        
-        amount = "150"
+        amount = "100"
         currency_code = "NGN"
 
         try:

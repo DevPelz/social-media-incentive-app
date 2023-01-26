@@ -26,9 +26,7 @@
           <div class="kit">
             <i class="fa-solid fa-ranking-star"></i>
           </div>
-          <h2>Redeem 100 points for ₦</h2>
-          <h2 id="amount">100</h2>
-          <h2>airtime</h2>
+          <h2>Redeem 100 points for <span id="amount">₦100</span> <span>airtime</span></h2>
           <div class="btn">
             <a href="#" id="redeemButton">Redeem now</a>
           </div>
@@ -80,7 +78,7 @@
           <div class="kit">
             <i class="fa-solid fa-ranking-star"></i>
           </div>
-          <h2>Redeem 2000 points for ₦2000 airtime</h2>
+          <h2>Redeem 2000 points for 2.5Gb Youtube</h2>
           <div class="btn">
             <a href="redeemButton">Redeem now</a>
           </div>
@@ -90,7 +88,7 @@
           <div class="kit">
             <i class="fa-solid fa-ranking-star"></i>
           </div>
-          <h2>Redeem points 2500 for ₦2500 airtime</h2>
+          <h2>Redeem points 2500 for ₦5Gb Night plan</h2>
           <div class="btn">
             <a href="#">Redeem now</a>
           </div>
@@ -133,25 +131,21 @@
       var amount = document.getElementById("amount").outerText;
 
       link.onclick = function () {
-        var mobile = prompt("Enter Mobile Number to recieve your airtime");
+        var phoneNumber = prompt("Enter Mobile Number to recieve your airtime");
 
-        $.ajax({
-          type: "POST",
-          url: "https://airtimesocial.onrender.com/",
-          dataType: "JSON",
-          data: {
-            phone_number: mobile,
-            // amount: amount,
-          },
-          success: function (result) {
-            console.log(JSON.stringify(result));
-          },
-          error: function (err) {
-            console.log("Error");
-            console.log(JSON.stringify(err));
-          },
-          // dataType: "json",
-        });
+
+
+// Check if the input is 11 digits
+if (phoneNumber.length === 11) {
+    distributeAirtime(phoneNumber);
+} else {
+        alert("Invalid phone number. Please enter an 11-digit phone number.");
+}
+
+function distributeAirtime(phoneNumber) {
+        alert("Airtime has been distributed to "+ phoneNumber);
+}
+
       };
     </script>
   </body>
