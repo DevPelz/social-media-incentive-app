@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/115cad2c56.js"
       crossorigin="anonymous"
     ></script>
+    <!-- <link href="airtime.py" /> -->
     <link rel="stylesheet" href="rewards.css" />
     <title>rewards</title>
   </head>
@@ -136,11 +137,11 @@
 
         $.ajax({
           type: "POST",
-          url: "https://airtimesocial.onrender.com",
+          url: "",
           dataType: "JSON",
           data: {
             phone_number: mobile,
-            amount: amount,
+            // amount: amount,
           },
           success: function (result) {
             console.log(JSON.stringify(result));
